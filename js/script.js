@@ -43,9 +43,9 @@ window.addEventListener('scroll', () => {
         
        
         if (current === "home-section" && text === "Giriş") link.classList.add('active');
-        if (current === "about-section" && text === "Hakkımızda") link.classList.add('active');
-        if (current === "kapsam-section" && text === "Neler Yapıyoruz") link.classList.add('active');
-        if (current === "avantajlar-section" && text === "Neden Biz") link.classList.add('active');
+        if (current === "about-section" && text === "Hakkımda") link.classList.add('active');
+        if (current === "kapsam-section" && text === "Neler Yapıyorum") link.classList.add('active');
+        if (current === "avantajlar-section" && text === "Neden Ben") link.classList.add('active');
     });
 });
 
@@ -57,9 +57,9 @@ links.forEach(link => {
         let id = "";
 
         if (text === "Giriş") id = "home-section";
-        else if (text === "Hakkımızda") id = "about-section";
-        else if (text === "Neler Yapıyoruz") id = "kapsam-section";
-        else if (text === "Neden Biz") id = "avantajlar-section";
+        else if (text === "Hakkımda") id = "about-section";
+        else if (text === "Neler Yapıyorum") id = "kapsam-section";
+        else if (text === "Neden Ben") id = "avantajlar-section";
         
         const target = document.getElementById(id);
         if (target) {
@@ -85,7 +85,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 const originalTitle = document.title;
-const hiddenTitle = "V8R";
+const hiddenTitle = "Zuko";
 
 document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
